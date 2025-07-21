@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../../Organization/knxprod-support/knx_project_20/knx-editor.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<KNX oldxmlns="http://knx.org/xml/project/20" xmlns:op="http://github.com/OpenKNX/OpenKNXproducer">
+  <ManufacturerData>
+    <Manufacturer RefId="M-00FA">
+      <Catalog>
+        <CatalogSection Id="M-00FA_CS-OpenKNX" Name="OpenKNX" Number="OpenKNX" DefaultLanguage="de-DE">
+          <CatalogItem Id="%CatalogItemId%" Name="OpenKNX: REG1 Schaltaktor 4x (Dev)" Number="1" ProductRefId="%ProductId%" Hardware2ProgramRefId="%Hardware2ProgramId%" DefaultLanguage="de-DE" />
+        </CatalogSection>
+      </Catalog>
+      <ApplicationPrograms>
+        <op:version OpenKnxId="0xA1" ApplicationNumber="61" ApplicationVersion="1" ReplacesVersions="0" ApplicationRevision="0" />
+        <ApplicationProgram Id="%AID%" ProgramType="ApplicationProgram" MaskVersion="MV-07B0" Name="REG1 Schaltaktor 4x-Dev" LoadProcedureStyle="MergedProcedure" PeiType="0" DefaultLanguage="de-DE" DynamicTableManagement="false" Linkable="true" MinEtsVersion="5.0" ContextHelpFile="%FILE-HELP-de%" IconFile="%FILE-ICONS%" IPConfig="Custom" ApplicationNumber="0" ApplicationVersion="0" ReplacesVersions="0">
+          <Static>
+            <Code>
+              <RelativeSegment Id="%AID%_RS-04-00000" Name="Parameters" Offset="0" Size="%MemorySize%" LoadStateMachine="4" />
+            </Code>
+            <ParameterTypes>
+              <op:include href="../lib/OGM-Common/src/Common.share.xml" xpath="//ApplicationProgram/Static/ParameterTypes/ParameterType" prefix="BASE" />
+              <op:include href="../lib/OFM-ConfigTransfer/src/ConfigTransfer.share.xml" xpath="//ApplicationProgram/Static/ParameterTypes/ParameterType" prefix="UCT" />
+              <op:include href="../lib/OFM-LogicModule/src/Logikmodul.share.xml" xpath="//ApplicationProgram/Static/ParameterTypes/ParameterType" prefix="LOG" />
+              <op:include href="../lib/OFM-SwitchActuator/src/SwitchActuatorModule.share.xml" xpath="//ApplicationProgram/Static/ParameterTypes/ParameterType" prefix="SWA" />
+            </ParameterTypes>
+            <Parameters>
+              <op:include href="../lib/OGM-Common/src/Common.share.xml" xpath="//ApplicationProgram/Static/Parameters/Parameter|//ApplicationProgram/Static/Parameters/Union" type="parameter" prefix="BASE" />
+              <op:include href="../lib/OFM-ConfigTransfer/src/ConfigTransfer.share.xml" xpath="//ApplicationProgram/Static/Parameters/Parameter|//ApplicationProgram/Static/Parameters/Union" type="parameter" prefix="UCT" />
+              <op:include href="../lib/OFM-LogicModule/src/Logikmodul.share.xml" xpath="//ApplicationProgram/Static/Parameters/Parameter|//ApplicationProgram/Static/Parameters/Union" type="parameter" prefix="LOG" />
+              <op:include href="../lib/OFM-LogicModule/src/Logikmodul.templ.xml" xpath="//ApplicationProgram/Static/Parameters/Parameter|//ApplicationProgram/Static/Parameters/Union" type="template" prefix="LOG" />
+              <op:include href="../lib/OFM-SwitchActuator/src/SwitchActuatorModule.share.xml" xpath="//ApplicationProgram/Static/Parameters/Parameter|//ApplicationProgram/Static/Parameters/Union" type="parameter" prefix="SWA" />
+              <op:include href="../lib/OFM-SwitchActuator/src/SwitchActuatorModule.templ.xml" xpath="//ApplicationProgram/Static/Parameters/Parameter|//ApplicationProgram/Static/Parameters/Union" type="template" prefix="SWA" />
+            </Parameters>
+            <ParameterRefs>
+              <op:include href="../lib/OGM-Common/src/Common.share.xml" xpath="//ApplicationProgram/Static/ParameterRefs/ParameterRef" prefix="BASE" />
+              <op:include href="../lib/OFM-ConfigTransfer/src/ConfigTransfer.share.xml" xpath="//ApplicationProgram/Static/ParameterRefs/ParameterRef" prefix="UCT" />
+              <op:include href="../lib/OFM-LogicModule/src/Logikmodul.share.xml" xpath="//ApplicationProgram/Static/ParameterRefs/ParameterRef" prefix="LOG" />
+              <op:include href="../lib/OFM-LogicModule/src/Logikmodul.templ.xml" xpath="//ApplicationProgram/Static/ParameterRefs/ParameterRef" type="template" prefix="LOG" />
+              <op:include href="../lib/OFM-SwitchActuator/src/SwitchActuatorModule.share.xml" xpath="//ApplicationProgram/Static/ParameterRefs/ParameterRef" prefix="SWA" />
+              <op:include href="../lib/OFM-SwitchActuator/src/SwitchActuatorModule.templ.xml" xpath="//ApplicationProgram/Static/ParameterRefs/ParameterRef" type="template" prefix="SWA" />
+            </ParameterRefs>
+            <ParameterCalculations>
+              <op:include href="../lib/OGM-Common/src/Common.share.xml" xpath="//ApplicationProgram/Static/ParameterCalculations/ParameterCalculation" prefix="BASE" />
+              <op:include href="../lib/OFM-ConfigTransfer/src/ConfigTransfer.share.xml" xpath="//ApplicationProgram/Static/ParameterCalculations/ParameterCalculation" prefix="UCT" />
+              <op:include href="../lib/OFM-LogicModule/src/Logikmodul.share.xml" xpath="//ApplicationProgram/Static/ParameterCalculations/ParameterCalculation" prefix="LOG" />
+              <op:include href="../lib/OFM-LogicModule/src/Logikmodul.templ.xml" xpath="//ApplicationProgram/Static/ParameterCalculations/ParameterCalculation" type="template" prefix="LOG" />
+              <op:include href="../lib/OFM-SwitchActuator/src/SwitchActuatorModule.share.xml" xpath="//ApplicationProgram/Static/ParameterCalculations/ParameterCalculation" prefix="SWA" />
+              <op:include href="../lib/OFM-SwitchActuator/src/SwitchActuatorModule.templ.xml" xpath="//ApplicationProgram/Static/ParameterCalculations/ParameterCalculation" type="template" prefix="SWA" />
+            </ParameterCalculations>
+            <ParameterValidations>
+              <op:include href="../lib/OGM-Common/src/Common.share.xml" xpath="//ApplicationProgram/Static/ParameterValidations/ParameterValidation" prefix="BASE" />
+              <op:include href="../lib/OFM-ConfigTransfer/src/ConfigTransfer.share.xml" xpath="//ApplicationProgram/Static/ParameterValidations/ParameterValidation" prefix="UCT" />
+              <op:include href="../lib/OFM-LogicModule/src/Logikmodul.share.xml" xpath="//ApplicationProgram/Static/ParameterValidations/ParameterValidation" prefix="LOG" />
+              <op:include href="../lib/OFM-LogicModule/src/Logikmodul.templ.xml" xpath="//ApplicationProgram/Static/ParameterValidations/ParameterValidation" type="template" prefix="LOG" />
+              <op:include href="../lib/OFM-SwitchActuator/src/SwitchActuatorModule.share.xml" xpath="//ApplicationProgram/Static/ParameterValidations/ParameterValidation" prefix="SWA" />
+              <op:include href="../lib/OFM-SwitchActuator/src/SwitchActuatorModule.templ.xml" xpath="//ApplicationProgram/Static/ParameterValidations/ParameterValidation" type="template" prefix="SWA" />
+            </ParameterValidations>
+            <ComObjectTable>
+              <op:include href="../lib/OGM-Common/src/Common.share.xml" xpath="//ApplicationProgram/Static/ComObjectTable/ComObject" prefix="BASE" />
+              <op:include href="../lib/OFM-ConfigTransfer/src/ConfigTransfer.share.xml" xpath="//ApplicationProgram/Static/ComObjectTable/ComObject" prefix="UCT" />
+              <op:include href="../lib/OFM-LogicModule/src/Logikmodul.share.xml" xpath="//ApplicationProgram/Static/ComObjectTable/ComObject" prefix="LOG" />
+              <op:include href="../lib/OFM-LogicModule/src/Logikmodul.templ.xml" xpath="//ApplicationProgram/Static/ComObjectTable/ComObject" type="template" prefix="LOG" />
+              <op:include href="../lib/OFM-SwitchActuator/src/SwitchActuatorModule.share.xml" xpath="//ApplicationProgram/Static/ComObjectTable/ComObject" prefix="SWA" />
+              <op:include href="../lib/OFM-SwitchActuator/src/SwitchActuatorModule.templ.xml" xpath="//ApplicationProgram/Static/ComObjectTable/ComObject" type="template" prefix="SWA" />
+            </ComObjectTable>
+            <ComObjectRefs>
+              <op:include href="../lib/OGM-Common/src/Common.share.xml" xpath="//ApplicationProgram/Static/ComObjectRefs/ComObjectRef" prefix="BASE" />
+              <op:include href="../lib/OFM-ConfigTransfer/src/ConfigTransfer.share.xml" xpath="//ApplicationProgram/Static/ComObjectRefs/ComObjectRef" prefix="UCT" />
+              <op:include href="../lib/OFM-LogicModule/src/Logikmodul.share.xml" xpath="//ApplicationProgram/Static/ComObjectRefs/ComObjectRef" prefix="LOG" />
+              <op:include href="../lib/OFM-LogicModule/src/Logikmodul.templ.xml" xpath="//ApplicationProgram/Static/ComObjectRefs/ComObjectRef" type="template" prefix="LOG" />
+              <op:include href="../lib/OFM-SwitchActuator/src/SwitchActuatorModule.share.xml" xpath="//ApplicationProgram/Static/ComObjectRefs/ComObjectRef" prefix="SWA" />
+              <op:include href="../lib/OFM-SwitchActuator/src/SwitchActuatorModule.templ.xml" xpath="//ApplicationProgram/Static/ComObjectRefs/ComObjectRef" type="template" prefix="SWA" />
+            </ComObjectRefs>
+            <AddressTable MaxEntries="2047" />
+            <AssociationTable MaxEntries="2047" />
+            <LoadProcedures>
+              <LoadProcedure MergeId="1">
+                <LdCtrlCompareProp InlineData="%VersionCheck%" ObjIdx="0" PropId="78">
+                  <OnError Cause="CompareMismatch" MessageRef="%AID%_M-1" />
+                </LdCtrlCompareProp>
+              </LoadProcedure>
+              <LoadProcedure MergeId="2">
+                <LdCtrlRelSegment LsmIdx="4" Size="%MemorySize%" Mode="1" Fill="0" AppliesTo="full" />
+                <LdCtrlRelSegment LsmIdx="4" Size="%MemorySize%" Mode="0" Fill="0" AppliesTo="par" />
+              </LoadProcedure>
+              <LoadProcedure MergeId="4">
+                <LdCtrlWriteRelMem ObjIdx="4" Offset="0" Size="%MemorySize%" Verify="true" AppliesTo="full,par" />
+              </LoadProcedure>
+              <LoadProcedure MergeId="7">
+                <LdCtrlLoadImageProp ObjIdx="4" PropId="27" />
+              </LoadProcedure>
+            </LoadProcedures>
+            <Extension />
+            <Messages>
+              <Message Id="%AID%_M-1" Name="VersionMismatch" Text="Diese Applikation und die installierte Firmware passen nicht zusammen." />
+              <op:include href="../lib/OGM-Common/src/Common.share.xml" xpath="//ApplicationProgram/Static/Messages/*" prefix="BASE" />
+              <op:include href="../lib/OFM-ConfigTransfer/src/ConfigTransfer.share.xml" xpath="//ApplicationProgram/Static/Messages/*" prefix="UCT" />
+              <op:include href="../lib/OFM-LogicModule/src/Logikmodul.share.xml" xpath="//ApplicationProgram/Static/Messages/*" prefix="LOG" />
+              <op:include href="../lib/OFM-SwitchActuator/src/SwitchActuatorModule.share.xml" xpath="//ApplicationProgram/Static/Messages/*" prefix="SWA" />
+            </Messages>
+            <Script>
+              <op:include href="../lib/OGM-Common/src/Common.share.xml" xpath="//ApplicationProgram/Static/Script/text()" prefix="BASE" />
+              <op:include href="../lib/OFM-ConfigTransfer/src/ConfigTransfer.share.xml" xpath="//ApplicationProgram/Static/Script/text()" prefix="UCT" />
+              <op:include href="../lib/OFM-LogicModule/src/Logikmodul.share.xml" xpath="//ApplicationProgram/Static/Script/text()" prefix="LOG" />
+              <op:include href="../lib/OFM-SwitchActuator/src/SwitchActuatorModule.share.xml" xpath="//ApplicationProgram/Static/Script/text()" prefix="SWA" />
+            </Script>
+            <Options />
+          </Static>
+          <ModuleDefs>
+            <op:include href="../lib/OGM-Common/src/Common.share.xml" xpath="//ApplicationProgram/ModuleDefs/*" prefix="BASE" />
+            <op:include href="../lib/OFM-ConfigTransfer/src/ConfigTransfer.share.xml" xpath="//ApplicationProgram/ModuleDefs/*" prefix="UCT" />
+            <op:include href="../lib/OFM-LogicModule/src/Logikmodul.share.xml" xpath="//ApplicationProgram/ModuleDefs/*" prefix="LOG" />
+            <op:include href="../lib/OFM-LogicModule/src/Logikmodul.templ.xml" xpath="//ApplicationProgram/ModuleDefs/*" type="template" prefix="LOG" />
+            <op:include href="../lib/OFM-SwitchActuator/src/SwitchActuatorModule.share.xml" xpath="//ApplicationProgram/ModuleDefs/*" prefix="SWA" />
+            <op:include href="../lib/OFM-SwitchActuator/src/SwitchActuatorModule.templ.xml" xpath="//ApplicationProgram/ModuleDefs/*" type="template" prefix="SWA" />
+          </ModuleDefs>
+          <Dynamic>
+            <op:include href="../lib/OGM-Common/src/Common.share.xml" xpath="//ApplicationProgram/Dynamic/*" prefix="BASE" />
+            <op:include href="../lib/OFM-ConfigTransfer/src/ConfigTransfer.share.xml" xpath="//ApplicationProgram/Dynamic/*" prefix="UCT" />
+            <op:include href="../lib/OFM-LogicModule/src/Logikmodul.share.xml" xpath="//ApplicationProgram/Dynamic/*" prefix="LOG" />
+            <op:include href="../lib/OFM-SwitchActuator/src/SwitchActuatorModule.share.xml" xpath="//ApplicationProgram/Dynamic/*" prefix="SWA" />
+          </Dynamic>
+        </ApplicationProgram>
+      </ApplicationPrograms>
+      <Baggages>
+        <op:include href="../lib/OGM-Common/src/Common.share.xml" xpath="//Manufacturer/Baggages/*" prefix="BASE" />
+        <op:include href="../lib/OFM-ConfigTransfer/src/ConfigTransfer.share.xml" xpath="//Manufacturer/Baggages/*" prefix="UCT" />
+        <op:include href="../lib/OFM-LogicModule/src/Logikmodul.share.xml" xpath="//Manufacturer/Baggages/*" prefix="LOG" />
+        <op:include href="../lib/OFM-SwitchActuator/src/SwitchActuatorModule.share.xml" xpath="//Manufacturer/Baggages/*" prefix="SWA" />
+      </Baggages>
+      <Hardware>
+        <Hardware Id="%HardwareId%" Name="OpenKNX-REG1 Schaltaktor 4x-Dev" SerialNumber="0xA13D" VersionNumber="1" BusCurrent="20" HasIndividualAddress="true" HasApplicationProgram="true">
+          <Products>
+            <Product Id="%ProductId%" Text="OpenKNX: REG1 Schaltaktor 4x (Dev)" OrderNumber="OpenKnxREG1SA4" IsRailMounted="false" DefaultLanguage="de-DE">
+              <RegistrationInfo RegistrationStatus="Registered" />
+            </Product>
+          </Products>
+          <Hardware2Programs>
+            <Hardware2Program Id="%Hardware2ProgramId%" MediumTypes="MT-0">
+              <ApplicationProgramRef RefId="%AID%" />
+              <RegistrationInfo RegistrationStatus="Registered" RegistrationNumber="0001/%HardwareVersionEncoded%1" />
+            </Hardware2Program>
+          </Hardware2Programs>
+        </Hardware>
+      </Hardware>
+    </Manufacturer>
+  </ManufacturerData>
+</KNX>
