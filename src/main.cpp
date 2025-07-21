@@ -11,6 +11,7 @@ void setup()
 
     openknx.addModule(1, openknxLogic);
     openknx.addModule(2, openknxSwitchActuatorModule);
+    
     openknx.addModule(9, openknxFileTransferModule);
     openknx.setup();
 }
