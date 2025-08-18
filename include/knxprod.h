@@ -9,10 +9,10 @@
                                          (time & 0x3FFF) * 3600000 ) : 0 )
                                              
 #ifndef FIRMWARE_NAME
-    #define FIRMWARE_NAME "REG1 Schaltaktor 4x (Dev)"
+    #define FIRMWARE_NAME "REG1 Schaltaktor 4x"
 #endif
 #define MAIN_OpenKnxId 0xA1
-#define MAIN_ApplicationNumber 61
+#define MAIN_ApplicationNumber 60
 #define MAIN_ApplicationVersion 2
 #define MAIN_ApplicationEncoding iso-8859-15
 #define MAIN_ParameterSize 5971
