@@ -8,9 +8,13 @@
             (time & 0xC000) == 0x8000 ? ((time & 0x3FFF) > 1000 ? 3600000 : \
                                          (time & 0x3FFF) * 3600000 ) : 0 )
                                              
+#ifndef FIRMWARE_NAME
+    #define FIRMWARE_NAME "REG1 Schaltaktor 4x (Dev)"
+#endif
 #define MAIN_OpenKnxId 0xA1
 #define MAIN_ApplicationNumber 61
-#define MAIN_ApplicationVersion 1
+#define MAIN_ApplicationVersion 2
+#define MAIN_ApplicationEncoding iso-8859-15
 #define MAIN_ParameterSize 5971
 #define MAIN_MaxKoNumber 153
 #define MAIN_OrderNumber "OpenKnxREG1SA4"

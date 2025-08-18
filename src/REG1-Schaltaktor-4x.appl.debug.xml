@@ -9,7 +9,7 @@
         </CatalogSection>
       </Catalog>
       <ApplicationPrograms>
-        <op:version OpenKnxId="0xA1" ApplicationNumber="61" ApplicationVersion="1" ReplacesVersions="0" ApplicationRevision="0" />
+        <op:version OpenKnxId="0xA1" ApplicationNumber="61" ApplicationVersion="2" ReplacesVersions="1 0" ApplicationRevision="0" />
         <ApplicationProgram Id="%AID%" ProgramType="ApplicationProgram" MaskVersion="MV-07B0" Name="REG1 Schaltaktor 4x-Dev" LoadProcedureStyle="MergedProcedure" PeiType="0" DefaultLanguage="de-DE" DynamicTableManagement="false" Linkable="true" MinEtsVersion="5.0" ContextHelpFile="%FILE-HELP-de%" IconFile="%FILE-ICONS%" IPConfig="Custom" ApplicationNumber="0" ApplicationVersion="0" ReplacesVersions="0">
           <Static>
             <Code>
@@ -102,7 +102,7 @@
               <op:include href="../lib/OFM-LogicModule/src/Logikmodul.share.xml" xpath="//ApplicationProgram/Static/Script/text()" prefix="LOG" />
               <op:include href="../lib/OFM-SwitchActuator/src/SwitchActuatorModule.share.xml" xpath="//ApplicationProgram/Static/Script/text()" prefix="SWA" />
             </Script>
-            <Options />
+            <Options TextParameterEncoding="iso-8859-15" />
           </Static>
           <ModuleDefs>
             <op:include href="../lib/OGM-Common/src/Common.share.xml" xpath="//ApplicationProgram/ModuleDefs/*" prefix="BASE" />
